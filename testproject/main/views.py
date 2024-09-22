@@ -18,7 +18,7 @@ def create(request):
             form.save()
             return redirect('home')
         else:
-            error = 'Форма заполнена неверно'
+            error = 'Form is not valid'
 
     form = TaskForm()
     context = {
